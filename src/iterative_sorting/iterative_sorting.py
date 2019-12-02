@@ -30,8 +30,23 @@ def bubble_sort(arr):
     return arr
 
 
+def insertion_sort(arr):
+    for i in range(1, len(arr)):
+        current_val = arr[i]
+        j = i - 1
+
+        # if value to the right is smaller
+        while j >= 0 and current_val < arr[j]:
+            arr[j + 1] = arr[j]
+            j -= 1
+
+        # already in order, move on to the next
+        if j + 1 != i:
+            arr[j + 1] = current_val
+
+    return arr
+
+
 # STRETCH: implement the Count Sort function below
 # def count_sort(arr, maximum=-1):
 #     return arr
-
-# print(selection_sort([1, 5, 8, 4, 2, 9, 6, 0, 3, 7]))
