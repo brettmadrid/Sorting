@@ -1,11 +1,9 @@
-# TO-DO: Complete the selection_sort() function below 
+# TO-DO: Complete the selection_sort() function below
 def selection_sort(arr):
-    # loop through n-1 elements
-    for i in range(0, len(arr) - 1):
+    for i in range(0, len(arr)):
         lowest = i
-        smallest_index = lowest
-        # TO-DO: find next smallest element
-        for j in range(i + 1, len(arr) - 1):
+
+        for j in range(i + 1, len(arr)):
             if arr[j] < arr[lowest]:
                 lowest = j
 
@@ -36,4 +34,4 @@ def bubble_sort(arr):
 # def count_sort(arr, maximum=-1):
 #     return arr
 
-print(bubble_sort([25, 67, 4, 33, 19, 40]))
+# print(selection_sort([1, 5, 8, 4, 2, 9, 6, 0, 3, 7]))
