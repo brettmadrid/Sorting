@@ -7,14 +7,12 @@ def selection_sort(arr):
             if arr[j] < arr[lowest]:
                 lowest = j
 
-        # TO-DO: swap
         if i != lowest:
             arr[i], arr[lowest] = arr[lowest], arr[i]
 
     return arr
 
 
-# TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr):
     # set variable to track if swaps were made
     swaps_occurred = True  # to start the loop
