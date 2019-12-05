@@ -44,6 +44,13 @@ def merge_sort(arr):
     return merge(left, right)
 
 
+'''
+Pseudo code for merge sort in place
+1. maintain two pointers that point to both halves that need to be sorted
+2. compare the elements for where the pointers are present
+3. if element1 < element2, then element1 is in the right place, so increase the pointer to the next item
+4. Else place element2 in its right position and all the elements at the right of element2 will be shifted right by one position. Increment all the pointers by 1.
+'''
 # STRETCH: implement an in-place merge sort algorithm
 # def merge_in_place(arr, start, mid, end):
 #     # TO-DO
