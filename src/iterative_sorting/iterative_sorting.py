@@ -1,7 +1,10 @@
 # TO-DO: Complete the selection_sort() function below
 def selection_sort(arr):
-    for i in range(0, len(arr)):
-        lowest = i
+    '''
+        Loop to the next to the last item because the inner loop always adds 1 to the value of i.
+    '''
+    for i in range(0, len(arr)-1):
+        lowest = i  # holds index position of lowest value
 
         for j in range(i + 1, len(arr)):
             if arr[j] < arr[lowest]:
