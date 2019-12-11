@@ -57,31 +57,31 @@ Pseudo code for merge sort in place
 # STRETCH: implement an in-place merge sort algorithm
 
 
-def merge_in_place(arr, start, mid, end):
-    # TO-DO
-    left = arr[start:mid]
-    right = arr[mid:end]
-    i = 0
-    j = 0
-    k = start
-    for l in range(k, end):
-        if j >= len(right) or (i < len(left) and left[i] < right[j]):
-            arr[l] = left[i]
-            i = i + 1
-        else:
-            arr[l] = right[j]
-            j = j + 1
-    return arr
+# def merge_in_place(arr, start, mid, end):
+#     # TO-DO
+#     left = arr[start:mid]
+#     right = arr[mid:end]
+#     i = 0
+#     j = 0
+#     k = start
+#     for l in range(k, end):
+#         if j >= len(right) or (i < len(left) and left[i] < right[j]):
+#             arr[l] = left[i]
+#             i = i + 1
+#         else:
+#             arr[l] = right[j]
+#             j = j + 1
+#     return arr
 
 
-def merge_sort_in_place(arr, l, r):
-    # TO-DO
-    if r - l > 1:
-        mid = int((l + r) / 2)
-        merge_sort_in_place(arr, l, mid)
-        merge_sort_in_place(arr, mid, r)
-        merge_in_place(arr, l, mid, r)
-    return arr
+# def merge_sort_in_place(arr, l, r):
+#     # TO-DO
+#     if r - l > 1:
+#         mid = int((l + r) / 2)
+#         merge_sort_in_place(arr, l, mid)
+#         merge_sort_in_place(arr, mid, r)
+#         merge_in_place(arr, l, mid, r)
+#     return arr
 
 
 # arr1 = random.sample(range(200), 50)
